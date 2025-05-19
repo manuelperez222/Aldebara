@@ -2,54 +2,36 @@
     margin: 0;
     padding: 0;
 }
-body{
-    margin: 30px auto;
-}
-h1{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    }
-p{
-    text-align: center;
-    font-family: fantasy;
-    margin-top: 15px;
-    font-size: 28px;
-    color: gray;
-    margin-bottom: 30px;
-}
-hr{
-    margin: 30px;
-    }
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-input, textarea{
-    width: 80%;
-    height: 30px;
-    border-radius: 15px;
-    border-color: gray;
-}
-label{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-}
-button{
-    padding: 15px 25px;
+html{
     background-color: black;
-    color: white;
-    border-radius: 20px;
+    color: greenyellow;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    animation: colores 20s ease infinite;
 }
-form button :hover{
-   background-color: rgba(0, 0, 0, 0.835);
-}
-textarea{
-    height: 120px;
-}
-input:focus, input:textarea{
-    border: solid burlywood;
+.contenedor{
+    margin: 10px auto;
     
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content:center;
+    gap: 15px;
+}
+.tarjeta{
+    border: 1px solid purple;
+    box-shadow: 0 0 0 5px lightgrey;
+    border-radius: 10px;
+}
+.tarjeta:hover{
+    
+    background-color: aliceblue;
+    color: aquamarine;
+}
+@keyframes colores{
+    0%{ background-color: aqua;}
+    25%{ background-color: brown; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    50%{background-color: blueviolet;font-family: fantasy;}
+    75%{background-color: pink;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    100%{background-color: cadetblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 }
